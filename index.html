@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>No-nonsense time zone conversion</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-chosen.css" />
+    <script type="text/javascript" src="/js/moment.min.js"></script>
+    <script type="text/javascript" src="/js/moment-timezone-with-data-2010-2020.min.js"></script>
+    <script type="text/javascript" src="/js/jstz.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.min.css" />
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class='col-sm-4 column'>
+            <h1>What time is it</h1>
+            <div class="form-group">
+              <div class='input-group date' id='timepicker'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                </span>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="nowcheck" checked> Now
+              </label>
+            </div>
+            <h1>in</h1>
+            <select id="destTimezone" class="form-control" data-placeholder="Choose a timezone...">
+              <!-- filled by JQuery -->
+            </select>
+            <p id="output"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
